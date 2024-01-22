@@ -1,6 +1,8 @@
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@200,500,300,600,400,700&display=swap");
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .home-con {
@@ -246,7 +248,7 @@
 
 .container {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   padding: 0;
 }
@@ -255,38 +257,35 @@
   flex: 1;
   background: url("./img/Rectangle 12.png") center/cover;
   color: white;
-  display: flex;
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: red;
+  align-items: center; */
   padding: 20px;
   position: relative;
 }
 
 .container .left-side .logo{
-  position: absolute;
-  left: 5vw;
-  top: 5vh;
+  padding: 4rem 3.5rem;
 }
 
 .container .left-side p {
+  color: #FFF;
   position: absolute;
-  bottom: 10vh;
-  color: "white";
-  font-size: 46px;
+  bottom: 112px;
+  padding:  0rem 3.5rem;
+  text-align: justify;
   font-family: "General Sans";
-  font-weight: "600";
-  line-height: 62px;
-  width: 38vw;
-  /* wordWrap: 'break-word' */
+  font-size: 2.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.875rem;
 }
 
 .container .right-side {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  width: 35%;
+  width: 38%;
   margin: 0 4vw;
   padding-top: 2vh;
 }
@@ -388,7 +387,6 @@
 .container .check-con {
   display: grid;
   grid-template-columns: 10px 300px;
-
   font-size: 12px;
 }
 
