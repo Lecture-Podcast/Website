@@ -29,9 +29,18 @@ import quote from "../img/bxs_quote-left.png";
 import star from "../img/ic_round-star.png";
 import Ellipse from "../img/Ellipse 1 (1).png";
 import slideImg from "../img/Frame 20.png";
-import media from "../img/media.png";
-import Rectangle2 from "../img/Rectangle 2.png";
+import mail from "../img/mail.png";
+import Phone from "../img/Phone.png";
+import twitter from "../img/twitter.png";
+import instagram from "../img/instagram.png";
+
 import tabler from "../img/tabler_mail.png";
+
+import { TiSocialFacebook } from "react-icons/ti";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { SlSocialTwitter } from "react-icons/sl";
+import { SlSocialInstagram } from "react-icons/sl";
+
 
 function Home() {
   // const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -468,7 +477,7 @@ function Home() {
               <div className="social-media">
                 <div className="img-p line">
                   <div>
-                    <img src={media} alt="" />
+                    <img src={Phone} alt="" />
                   </div>
                   <div>
                     <p>Phone Number</p>
@@ -477,7 +486,7 @@ function Home() {
                 </div>
                 <div className="img-p line">
                   <div>
-                    <img src={media} alt="" />
+                    <img src={mail} alt="" />
                   </div>
                   <div>
                     <p>Email Address</p>
@@ -487,7 +496,7 @@ function Home() {
 
                 <div className="img-p line">
                   <div>
-                    <img src={media} alt="" />
+                    <img src={instagram} alt="" />
                   </div>
                   <div>
                     <p>Instagram</p>
@@ -497,7 +506,7 @@ function Home() {
 
                 <div className="img-p">
                   <div>
-                    <img src={media} alt="" />
+                    <img src={twitter} alt="" />
                   </div>
                   <div>
                     <p>X (Twitter)</p>
@@ -523,16 +532,17 @@ function Home() {
               </div>
               <div className="social-icons">
                 <div>
-                  <img src={Rectangle2} alt="" />
+                  <TiSocialFacebook />
                 </div>
                 <div>
-                  <img src={Rectangle2} alt="" />
+<FaLinkedinIn />
                 </div>
                 <div>
-                  <img src={Rectangle2} alt="" />
+                <SlSocialTwitter />
+
                 </div>
                 <div>
-                  <img src={Rectangle2} alt="" />
+<SlSocialInstagram />
                 </div>
               </div>
             </div>

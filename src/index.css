@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  /* box-sizing: border-box; */
 }
 
 .home-con {
@@ -782,7 +783,21 @@
 }
 
 .home-main .footer div:first-child .social-icons div {
-  width: 2vw;
+  /* width: 3vw; */
+  /* height: 9vh; */
+  padding: 2vh 2vw;
+  background-color: #434d56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #1A194D;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-main .footer div:first-child .social-icons div:hover{
+  background-color: #ffa500;
+  cursor: pointer;
 }
 
 .home-main .footer div:first-child .social-icons {
