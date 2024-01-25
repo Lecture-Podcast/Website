@@ -1,39 +1,29 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import { FcGoogle } from "react-icons/fc";
 
-import { FaEyeSlash } from "react-icons/fa";
-import { FaRegEye } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 
-// import ErrorMessage from "./ErrorMessage";
-
+import Misc from "../img/Misc icon.png";
 import LP from "../img/LP Logo.png";
 import headset from "../img/headset.png";
 import chevron from "../img/chevron-right.png";
 import Mail from "../img/freepik--Mail--inject-20.png";
 
+import "./css/forgetPassword.css";
+
 function ForgetPassword() {
+  const [openModal, setOpenModal] = useState(false);
 
-  const [openModal, setOpenModal] = useState(false)
+  const [errMessage, setErrMessage] = useState(true);
 
-  //   const [password, setPassword] = useState("");
+  function submitForm() {
+    setOpenModal(true);
+    setOpenModal(true);
+  }
 
-  //   const [visible, setVisible] = useState(true);
-
-  //   const [errMessage, setErrMessage] = useState(true);
-
-  //   function removeErrMessage() {
-  //     setErrMessage(false);
-  //   }
-
-    // function modalFtn() {
-    // }
-    
-    function submitForm() {
-      setOpenModal(true);
-      setOpenModal(true);
-    }
+  function removeErrMessage() {
+    setErrMessage(false);
+  }
 
   return (
     <div className="forget-pass-con">
@@ -52,10 +42,26 @@ function ForgetPassword() {
           <p>Go back to Login</p>
         </div>
 
-        {/* {
-            errMessage && <ErrorMessage removeErrMessage={removeErrMessage}/>
-          } */}
-        <form onClick={()=>submitForm()}>
+        {errMessage && (
+          <div className="e-m">
+          <div className="error-message">
+            <div>
+              <div className="error-img">
+                <img src={Misc} alt="" />
+              </div>
+              <p>
+                Passwords do not match. Please ensure both entries are
+                identical.
+              </p>
+              <IoMdClose
+                className="cancel"
+                onClick={() => removeErrMessage()}
+              />
+            </div>
+          </div>
+          </div>
+        )}
+        <form>
           <div>
             <h1>Reset Password</h1>
             <p>Enter the registered email address below</p>
@@ -69,7 +75,7 @@ function ForgetPassword() {
             />
           </label>
 
-          <button type="submit" className="reset-password">
+          <button type="submit" className="reset-password" onClick={() => submitForm()}>
             Reset Password
           </button>
         </form>
@@ -79,20 +85,26 @@ function ForgetPassword() {
           <p>Help and support</p>
         </div>
       </div>
-        {
-          openModal &&( <div className="modal-con">
-            <div className="modal">
-              <div>
-                <img src={Mail} alt="" />
-              </div>
-              <h1>Check Your Mail Inbox</h1>
-              <p className="message-sent">We&#39;ve sent a password reset link to <span className="user-email">johnsondoe@gmail.com</span></p>
-              <p className="wrong-e-address">
-                Wrong email address? <span className="re-enter-e-address">Re-enter your email address</span>
-              </p>
+      {openModal && (
+        <div className="modal-con">
+          <div className="modal">
+            <div>
+              <img src={Mail} alt="" />
             </div>
-          </div>)
-        }
+            <h1>Check Your Mail Inbox</h1>
+            <p className="message-sent">
+              We&#39;ve sent a password reset link to{" "}
+              <span className="user-email">johnsondoe@gmail.com</span>
+            </p>
+            <p className="wrong-e-address">
+              Wrong email address?{" "}
+              <span className="re-enter-e-address">
+                Re-enter your email address
+              </span>
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

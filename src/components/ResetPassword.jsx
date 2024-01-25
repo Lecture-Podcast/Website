@@ -1,19 +1,15 @@
 import { useState } from "react";
 
-import Misc from "../img/Misc icon.png";
 import { IoMdClose } from "react-icons/io";
-// import ErrorMessage from "./ErrorMessage";
 
+import Misc from "../img/Misc icon.png";
 import LP from "../img/LP Logo.png";
 import headset from "../img/headset.png";
 import chevron from "../img/chevron-right.png";
-import Mail from "../img/freepik--Mail--inject-20.png";
-import ErrorMessage from "./ErrorMessage";
+import success from "../img/undraw_completing_re_i7ap 1.png";
 
 function ResetPassword() {
   const [openModal, setOpenModal] = useState(false);
-
-  //   const [password, setPassword] = useState("");
 
   const [errMessage, setErrMessage] = useState(true);
 
@@ -44,24 +40,26 @@ function ResetPassword() {
           <p>Go back to Login</p>
         </div>
 
-        <form onClick={() => submitForm()}>
-          {errMessage && (
-            <div className="error-message">
-              <div>
-                <div className="error-img">
-                  <img src={Misc} alt="" />
-                </div>
-                <p className="reset-error">
-                  Passwords do not match. Please ensure both entries are
-                  identical.
-                </p>
-                <IoMdClose
-                  className="cancel"
-                  onClick={() => removeErrMessage()}
-                />
+        {errMessage && (
+          <div className="e-m">
+          <div className="error-message">
+            <div>
+              <div className="error-img">
+                <img src={Misc} alt="" />
               </div>
+              <p>
+                Passwords do not match. Please ensure both entries are
+                identical.
+              </p>
+              <IoMdClose
+                className="cancel"
+                onClick={() => removeErrMessage()}
+              />
             </div>
-          )}
+          </div>
+          </div>
+        )}
+        <form>
           <div>
             <h1>Set new password</h1>
             <p>
@@ -72,27 +70,19 @@ function ResetPassword() {
 
           <div className="password">
             <label htmlFor="password"></label>
-            <input
-              //   value={password}
-              id="password"
-              type="password"
-              placeholder="Password"
-              //   onChange={(e) => setPassword(e.target.value)}
-            />
+            <input id="password" type="password" placeholder="Password" />
           </div>
 
           <div className="password">
             <label htmlFor="confirm-password"></label>
             <input
-              //   value={password}
               id="confirm-password"
               type="password"
               placeholder="Confirm Password"
-              //   onChange={(e) => setPassword(e.target.value)}
             />
           </div>
 
-          <button type="submit" className="reset-password">
+          <button type="submit" className="reset-password" onClick={() => submitForm()}>
             Reset Password
           </button>
         </form>
@@ -106,14 +96,14 @@ function ResetPassword() {
         <div className="modal-con">
           <div className="modal">
             <div>
-              <img src={Mail} alt="" />
+              <img src={success} alt="" />
             </div>
             <h1>Password changed </h1>
             <p className="message-sent">
-			Your password has been reset succsessfully
+              Your password has been reset successfully
             </p>
             <p className="wrong-e-address">
-              Wrong email address?{" "}
+              Wrong email address?
               <span className="re-enter-e-address">
                 Re-enter your email address
               </span>

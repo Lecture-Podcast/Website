@@ -9,19 +9,18 @@ import { IoMdClose } from "react-icons/io";
 
 import LP from "../img/LP Logo.png";
 import headset from "../img/headset.png";
-// import ErrorMessage from "./ErrorMessage";
 import Misc from "../img/Misc icon.png";
 
-function SignUp() {
-  const [password, setPassword] = useState("");
+import "./css/login.css";
 
+function SignUp() {
   const [visible, setVisible] = useState(true);
 
   const [errMessage, setErrMessage] = useState(true);
 
   function removeErrMessage() {
     setErrMessage(false);
-    console.log(1)
+    console.log(1);
   }
 
   return (
@@ -35,21 +34,23 @@ function SignUp() {
 
       <div className="form-con">
         <form>
-          { errMessage && <div className="error-message">
-            <div>
-              <div className="error-img">
-                <img src={Misc} alt="" />
+          {errMessage && (
+            <div className="error-message">
+              <div>
+                <div className="error-img">
+                  <img src={Misc} alt="" />
+                </div>
+                <p>
+                  Incorrect login details. Please double-check your username
+                  <br /> and password and try again.
+                </p>
+                <IoMdClose
+                  className="cancel"
+                  onClick={() => removeErrMessage()}
+                />
               </div>
-              <p>
-                Incorrect login details. Please double-check your username
-                <br /> and password and try again.
-              </p>
-              <IoMdClose
-                className="cancel"
-                onClick={() => removeErrMessage()}
-              />
             </div>
-          </div>}
+          )}
           <div>
             <h1>
               Welcome to <span>Lecture</span> <span>Podcast</span>
@@ -70,11 +71,9 @@ function SignUp() {
           <div className="password-eye">
             <label htmlFor="password"></label>
             <input
-              //   value={password}
               id="password"
               type={visible ? "text" : "password"}
               placeholder="Password"
-              //   onChange={(e) => setPassword(e.target.value)}
             />
             <div onClick={() => setVisible(!visible)}>
               {visible ? (

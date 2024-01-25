@@ -21,7 +21,6 @@ import mail from "../img/mail.png";
 import Phone from "../img/Phone.png";
 import twitter from "../img/twitter.png";
 import instagram from "../img/instagram.png";
-
 import tabler from "../img/tabler_mail.png";
 
 import { TiSocialFacebook } from "react-icons/ti";
@@ -29,10 +28,9 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { SlSocialTwitter } from "react-icons/sl";
 import { SlSocialInstagram } from "react-icons/sl";
 
+import "./css/home.css";
 
 function Home() {
-  // const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  // console.log(testimonial);
 
   const personStars = Array.from({ length: 4 }, (v, i) => i);
 
@@ -478,14 +476,13 @@ function Home() {
                   <TiSocialFacebook />
                 </div>
                 <div>
-<FaLinkedinIn />
+                  <FaLinkedinIn />
                 </div>
                 <div>
-                <SlSocialTwitter />
-
+                  <SlSocialTwitter />
                 </div>
                 <div>
-<SlSocialInstagram />
+                  <SlSocialInstagram />
                 </div>
               </div>
             </div>
