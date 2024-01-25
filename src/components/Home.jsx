@@ -1,15 +1,3 @@
-// import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/free-mode";
-// import "swiper/css/pagination";
-
-// import './styles.css';
-
-// import required modules
-// import { FreeMode, Pagination } from "swiper/modules";
-
 // import { testimonial } from "../data/data";
 
 import logo from "../img/LP Logo.png";
@@ -297,51 +285,6 @@ function Home() {
             </p>
           </div>
 
-          {/* <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            freeMode={true}
-            pagination={{
-              clickable: true
-            }}
-            modules={[FreeMode, Pagination]}
-            className="mySwiper">
-            <div className="card-con">
-              <SwiperSlide>
-                {
-                  testimonial.map(person =>{
-                    return(
-
-                  <div className="card" key={person.id}>
-                  <div className="quote-img">
-                    <img src={quote} alt="" />
-                  </div>
-                  <p>
-                    “There was a time I was having issues understanding symbolic
-                    interactionism. Connecting with Lecture Podcast gave me the
-                    avenue to get podcast sessions. I got the lessons from
-                    another professor with detailed explanation and it started
-                    connecting.”
-                  </p>
-                  <div className="person-details">
-                    <div className="person-img">
-                      <img src={Ellipse} alt="" />
-                    </div>
-                    <div className="name-uni">
-                      <p>Name</p>
-                      <p>University</p>
-                    </div>
-                    <div className="person-star">
-                      <img src={star} alt="" />
-                    </div>
-                  </div>
-                </div>
-                    )
-                  })
-                }
-              </SwiperSlide>
-            </div>
-          </Swiper> */}
           <div className="card-con">
             <div className="card">
               <div className="quote-img">

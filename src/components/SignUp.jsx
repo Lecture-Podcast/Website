@@ -10,9 +10,12 @@ import PhoneInput from "react-phone-input-2";
 import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
 
+import Misc from "../img/Misc icon.png";
+import { IoMdClose } from "react-icons/io";
 // import Rectangle from "../img/Rectangle 12.png";
 import LP from "../img/LP Logo.png";
 import headset from "../img/headset.png";
+import ErrorMessage from "./ErrorMessage";
 
 function SignUp() {
   const [password, setPassword] = useState("");
@@ -20,6 +23,12 @@ function SignUp() {
   const [visible, setVisible] = useState(true);
 
   const [confirmPassVisible, setConfirmPassVisible] = useState(true);
+
+  const [errMessage, setErrMessage] = useState(true);
+
+  function removeErrMessage() {
+    setErrMessage(false);
+  }
 
   return (
     <div className="container">
@@ -30,6 +39,21 @@ function SignUp() {
         <p>Empower Content Creation with a User Friendly Platform</p>
       </div>
       <div className="right-side">
+
+      { errMessage && <div className="error-message">
+            <div>
+              <div className="error-img">
+                <img src={Misc} alt="" />
+              </div>
+              <p>
+              Passwords do not match. Please ensure both entries are identical.
+              </p>
+              <IoMdClose
+                className="cancel"
+                onClick={() => removeErrMessage()}
+              />
+            </div>
+          </div>}
         <form>
           <div>
             <h1>
@@ -50,7 +74,7 @@ function SignUp() {
           </label>
           <div className="phone-num">
             <label htmlFor="number">
-              <PhoneInput
+              <PhoneInput className="number"
                 id="number"
                 country={"ng"}
                 // 			value={***}

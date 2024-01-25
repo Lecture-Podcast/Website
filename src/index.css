@@ -1,7 +1,8 @@
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@200,500,300,600,400,700&display=swap");
 * {
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 .home-con {
@@ -16,7 +17,6 @@
 
 .home-con nav {
   display: flex;
-  /* display: none; */
 
   background: #01003a;
   align-items: center;
@@ -92,7 +92,7 @@
   padding: 1vh 2vw;
   border-radius: 3px;
   border: 1px solid #ffa500;
-  /* background-color: white; */
+
   margin-top: 1.5vh;
 }
 
@@ -100,7 +100,7 @@
   color: white;
   background-color: #ffa500;
   font-size: 15px;
-  font-family: "Inter"; /* chech here */
+  font-family: "Inter";
   font-weight: 600;
   /* wordWrap: 'break-word' */
 }
@@ -144,7 +144,7 @@
 .accumulator div p:first-child {
   color: white;
   font-size: 38px;
-  font-family: "General Sans", sans-serif; /*check here*/
+  font-family: "General Sans", sans-serif;
   font-weight: 600;
   word-wrap: break-word;
 }
@@ -167,7 +167,7 @@
 .home-main .why-amplify-elevate-empower h2 {
   color: #1a2129;
   font-size: 38px;
-  font-family: "General Sans", sans-serif; /*check here*/
+  font-family: "General Sans", sans-serif;
   font-weight: 600;
   line-height: 28px;
   margin-bottom: 3vh;
@@ -178,10 +178,6 @@
   align-items: center;
   justify-content: space-around;
   width: 80%;
-  /* background-color: rgba(86, 39, 255, 0.03) */
-  /*margin: 0 auto; */
-  /* margin: 4vh; */
-  /* height: 100%; */
 }
 
 .home-main .p-img {
@@ -194,7 +190,6 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 32px;
-  /* wordWrap: 'break-word' */
   margin-bottom: 1vh;
 }
 
@@ -212,15 +207,12 @@
 .home-main .p-icons div {
   background-color: white;
   padding: 1vh 1vw;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 .home-main .p-icons h3 {
   color: #1a2129;
   font-size: 20.04px;
   font-family: "Poppins";
-  /* font-weight: 500; */
+  font-weight: 500;
   line-height: 35.62px;
   /* wordWrap: 'break-word' */
 }
@@ -252,9 +244,6 @@
   width: 85%;
   margin: 0 auto;
   margin-top: 20vh;
-}
-
-.home-main .amplify div:first-child {
 }
 
 .home-main .amplify h3,
@@ -326,31 +315,25 @@
 
 .home-main .getting {
   background-color: #000025;
-  /* margin: 20vh 0; */
   padding: 15vh 0;
 }
 
 .home-main .getting .text-con {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   width: 85%;
   margin: 0 auto;
-  /* margin-top: 20vh; */
 }
 
 .home-main .getting .text-con .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* width: 40vw; */
   width: 37vw;
   text-align: justify;
 }
 
 .home-main .getting .text-con .text .h4-p h4 {
-  /* width: 35vw; */
-
   color: white;
   font-size: 38px;
   font-family: "General Sans";
@@ -380,16 +363,12 @@
 }
 
 .home-main .getting .text-con .text div:nth-child(2) p span {
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
   color: rgba(255, 255, 255, 0.7);
 }
 
 .home-main .getting .text-con .text div:nth-child(2) div {
   display: flex;
   align-items: center;
-  /* width: 35vw; */
   gap: 2vh 1vw;
   margin: 3vh 0;
 }
@@ -402,12 +381,6 @@
   width: 100%;
 }
 
-.home-main .getting .text-con .text .h4-p {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  /* width: 35vw; */
-}
 
 .home-main .getting .text-con .vid-con {
   width: 30vw;
@@ -450,28 +423,6 @@
   /* wordWrap: 'break-word' */
 }
 
-/* .swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  Center slide text vertically
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 .home-main .testimonial-session .card-con {
   display: flex;
@@ -575,24 +526,15 @@
 }
 
 .home-main .get-in-touch {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  /* width: 80%; */
-
   padding: 15vh 0;
   background-color: #706edf;
 }
 
 .home-main .get-in-touch .get-in-touch-social {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
-  /* width: 90%; */
   margin: 0 5vw;
-  /* gap: 4vh 0; */
   border-radius: 10px;
-  /* background-color: #aeadf9; */
 }
 
 .home-main .get-in-touch .e-message {
@@ -642,7 +584,6 @@
 }
 
 .home-main .e-message textarea {
-  /* margin: 2vh; */
   background-color: rgba(1, 0, 58, 0.1);
   border-radius: 10px;
   margin-bottom: 2vh;
@@ -695,7 +636,6 @@
   align-items: center;
   gap: 0 2vw;
   padding: 1vh 1vw;
-  /* width: 15vw; */
 }
 
 .home-main .get-in-touch .img-p div:first-child {
@@ -742,7 +682,6 @@
   font-family: "Poppins";
   border-bottom: 1px solid rgba(178, 178, 196, 0.3);
   padding-bottom: 7vh;
-  /* margin-bottom: 4vh; */
 }
 
 .home-main .footer h6 {
@@ -750,16 +689,12 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 32px;
-  /* wordWrap: 'break-word' */
 }
 
 .home-main .footer img {
   width: 100%;
 }
 
-/* .home-main .footer img{
-  width: 100%
-} */
 
 .home-main .footer div:first-child {
   display: flex;
@@ -783,19 +718,17 @@
 }
 
 .home-main .footer div:first-child .social-icons div {
-  /* width: 3vw; */
-  /* height: 9vh; */
   padding: 2vh 2vw;
   background-color: #434d56;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  background-color: #1A194D;
+  background-color: #1a194d;
   transition: all 0.5s ease-in-out;
 }
 
-.home-main .footer div:first-child .social-icons div:hover{
+.home-main .footer div:first-child .social-icons div:hover {
   background-color: #ffa500;
   cursor: pointer;
 }
@@ -894,53 +827,49 @@
   border-top: 1px solid #000025;
 }
 
-/* Sign Up Page and Login Page */
+
+
+/* Sign Up Page */
 
 .container {
   display: flex;
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
+
 
 .container .left-side {
   flex: 1;
   background: url("./img/Rectangle 12.png") center/cover;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
   padding: 20px;
   position: relative;
 }
 
 .container .left-side .logo {
-  position: absolute;
-  left: 5vw;
-  top: 5vh;
+  padding: 4rem 3.5rem;
 }
 
 .container .left-side p {
+  color: #fff;
   position: absolute;
-  bottom: 10vh;
-  color: "white";
-  font-size: 46px;
+  bottom: 112px;
+  padding: 0rem 3.5rem;
+  text-align: justify;
   font-family: "General Sans";
-  font-weight: "600";
-  line-height: 62px;
-  width: 38vw;
-  /* wordWrap: 'break-word' */
+  font-size: 2.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.875rem;
 }
 
 .container .right-side {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  width: 35%;
+  width: 38%;
   margin: 0 4vw;
-  padding-top: 2vh;
+  padding: 4vh;
 }
 
 .container .right-side h1 {
@@ -963,8 +892,6 @@
   font-size: 15px;
   font-family: "Poppins";
   font-weight: 400;
-  /* line-height: 32px; */
-  /* wordWrap: 'break-word' */
   outline: none;
   border: none;
 }
@@ -972,24 +899,20 @@
 .container input {
   outline: none;
   border: none;
-  width: 100%;
+  width: 100% !important;
   padding: 10px;
   margin-bottom: 15px;
   box-sizing: border-box;
-  background-color: #fafafa;
+  background-color: #fafafa !important;
+  border-radius: 10px !important;
+  font-family: "Poppins";
+  font-size: 15px;
 }
 
-.container input::placeholder {
-  /* padding-left: 6px; */
-}
-
-.container form div:first-child {
-  /* width: 30vw; */
-}
 
 .container form div:first-child h1 {
   font-size: 33px;
-  font-family: "General Sans", sans-serif; /**/
+  font-family: "General Sans", sans-serif; 
   font-weight: 600;
   /* wordWrap: 'break-word' */
 }
@@ -1010,24 +933,17 @@
   font-size: 18px;
   font-family: "Poppins";
   font-weight: 400;
-  /* line-height: 28px; */
-  /* wordWrap: 'break-word' */
+  padding-bottom: 3vh;
 }
 
 .container form .password {
   position: relative;
 }
 
-.container form input,
-.eyes {
+.container form .eyes {
   color: rgba(1, 0, 58, 0.41);
-  font-size: 15px;
-  font-family: "Poppins";
-  font-weight: "400";
-  /* line-height: 32px; */
-  /* wordWrap: 'break-word' */
-  border-radius: 10px;
 }
+
 .container form .password .input-absolute {
   position: absolute;
   right: 1vw;
@@ -1037,96 +953,16 @@
 .container .check-con {
   display: grid;
   grid-template-columns: 10px 300px;
-
   font-size: 12px;
 }
 
 .container .check-con p {
   color: #5e6b74;
-  /* font-size: 15px; */
   font-family: "Poppins";
   font-weight: 400;
-  /* line-height: 28px; */
-  /* wordWrap: 'break-word' */
   margin-left: 6px;
 }
 
-.container .check-con-forget-password {
-  /*for the login page*/
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.container .check-con-forget-password div {
-  /*for the login page*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* width: 16vw; */
-}
-
-.container .check-con-forget-password div span {
-  /*for the login page*/
-  color: #5e6b74;
-  font-size: 15px;
-  font-family: "Poppins";
-  font-weight: 400;
-  line-height: 28px;
-  /* wordWrap: 'break-word' */
-}
-
-.container .check-con-forget-password p {
-  /*for the login page*/
-
-  color: #ffa500;
-  font-size: 15px;
-  font-family: "Poppins";
-  font-weight: 500;
-  line-height: 28px;
-  /* wordWrap: 'break-word' */
-}
-
-.container .error-message {
-  /*for the login page*/
-  width: 90%;
-  margin: 0 auto;
-  border: 1px solid black;
-}
-
-.container .error-message div {
-  /*for the login page*/
-  display: flex;
-  align-items: center;
-  gap: 0 2vw;
-  margin-top: 4vh;
-  justify-content: space-between;
-  position: relative;
-}
-
-.container .error-message div div {
-  /*for the login page*/
-  /* position: absolute;
-  left: -4vw;
-  top: -2.5vh; */
-  width: 1vw;
-}
-.container .error-message div img {
-  /*for the login page*/
-
-  width: 18px;
-}
-
-.container .error-message div p {
-  /*for the login page*/
-  width: 30vw;
-  color: #101928;
-  font-size: 12px;
-  font-family: "Poppins";
-  font-weight: 400;
-  line-height: 18.24px;
-  /* wordWrap: 'break-word' */
-}
 
 .container form button {
   border-radius: 10px;
@@ -1189,7 +1025,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 0 1vw;
-  /* width: 15vw; */
 }
 
 .container .login-support div:nth-child(2) img {
@@ -1206,3 +1041,431 @@
   line-height: 32px;
   /* wordWrap: 'break-word' */
 }
+
+/* Login Page */
+
+.login-con {
+  display: flex;
+  width: 100%;
+}
+
+.login-con .left-background-con {
+  background-image: url("../src/img/Rectangle\ 12.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  position: relative;
+}
+.login-con .left-background-con p {
+  color: white;
+  font-size: 46px;
+  font-family: "General Sans";
+  font-weight: 600;
+  line-height: 62px;
+  /* wordWrap: 'break-word' */
+  position: absolute;
+  left: 4vw;
+  bottom: 4vh;
+}
+
+.login-con .left-background-pic {
+  position: absolute;
+  left: 4vw;
+  top: 8vh;
+}
+
+.login-con form input {
+  padding: 1vh 1vw;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: rgba(1, 0, 58, 0.41);
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 32px;
+  /* wordWrap: 'break-word' */
+}
+
+.login-con form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vh 0;
+}
+
+.login-con form .login-btn {
+  background-color: rgba(255, 165, 0, 0.6);
+  color: white;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 600;
+  border: none;
+  padding: 1vh 2vw;
+  border-radius: 10px;
+  /* wordWrap: 'break-word' */
+}
+
+.login-con .form-con {
+  /* width: 40%; */
+  height: 100vh;
+}
+
+.login-con .form-con h1 {
+  color: #1a2129;
+  font-size: 33px;
+  font-family: "General Sans";
+  font-weight: 600;
+  margin: 1vh 0;
+  /* wordWrap: 'break-word' */
+}
+.login-con .form-con h1 span:first-child {
+  color: #ffa500;
+}
+
+.login-con .form-con h1 span:nth-child(2) {
+  color: #3331a3;
+}
+
+.login-con form .form-header {
+  color: #5e6b74;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 2vh;
+  /* wordWrap: 'break-word' */
+}
+.login-con form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 3vw;
+  padding: 3vh 0;
+}
+
+.login-con form .password-eye {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.login-con form .check-p-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #5e6b74;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 28px;
+  /* wordWrap: 'break-word' */
+}
+
+.login-con form .check-p-con div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0 3px;
+  /* wordWrap: 'break-word' */
+}
+
+.login-con form .check-p-con .forget-para {
+  color: #ffa500;
+}
+
+.login-con form .google-btn {
+  display: flex;
+  align-items: center;
+  padding: 1vh 2vw;
+  gap: 0 1vw;
+  border: 1px solid rgba(151, 151, 151, 0.3);
+  margin: 0 auto;
+}
+.login-con form .google-btn button {
+  color: #5e6b74;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 500;
+  background-color: white;
+  border: none;
+}
+
+.login-con form .login-link-headset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-con form .login-link-headset div:first-child {
+  color: rgba(1, 0, 58, 0.41);
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 32px;
+  /* wordWrap: 'break-word' */
+}
+.login-con form .login-link-headset a {
+  color: #ffa500;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-decoration: underline;
+  line-height: 32px;
+  /* wordWrap: 'break-word' */
+}
+
+.login-con form .login-link-headset div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 0 1vw;
+}
+.login-con form .login-link-headset div:nth-child(2) p {
+  color: #3331a3;
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 32px;
+  /* wordWrap: 'break-word' */
+}
+
+/* Error Message */
+
+.error-message {
+  border-left: 5px solid #cb1a14;
+  padding: 0.5vh 0.5vw;
+  border-radius: 10px;
+}
+
+.error-message div {
+  display: flex;
+  gap: 0 1vw;
+  align-items: center;
+}
+.error-message div p {
+  color: #101928;
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 18.24px;
+  /* wordWrap: 'break-word' */
+}
+.error-message div .cancel {
+  cursor: pointer;
+}
+
+.error-message div .error-img {
+  width: 1.5vw;
+}
+.error-message div img {
+  width: 100%;
+}
+
+.login-con button {
+  cursor: pointer;
+}
+
+/* Forget Password Page */
+
+.forget-pass-con {
+  display: flex;
+  width: 100%;
+}
+
+.forget-pass-con .forget-pass-left-background-con {
+  background-image: url("../src/img/Rectangle\ 12.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  position: relative;
+}
+
+.forget-pass-con .forget-pass-left-background-pic {
+  position: absolute;
+  left: 4vw;
+  top: 8vh;
+}
+
+.forget-pass-con .forget-pass-left-background-con p {
+  color: white;
+  font-size: 46px;
+  font-family: "General Sans";
+  font-weight: 600;
+  line-height: 62px;
+  /* wordWrap: 'break-word' */
+  position: absolute;
+  left: 4vw;
+  bottom: 4vh;
+}
+
+.forget-pass-form-con {
+  width: 50%;
+  margin-top: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forget-pass-form-con .back {
+  display: flex;
+  align-items: center;
+  gap: 0 1vw;
+  color: rgba(1, 0, 58, 0.41);
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: "400";
+  line-height: 32px;
+  position: absolute;
+  top: 4vh;
+  right: 30vw;
+  /* wordWrap: 'break-word' */
+}
+
+.forget-pass-form-con .back div {
+  width: 1vw;
+}
+.forget-pass-form-con .back div img {
+  width: 100%;
+}
+.forget-pass-con form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 4vw;
+  gap: 3vh 0;
+  height: 100vh;
+}
+
+.forget-pass-con form input {
+  padding: 1vh 1vw;
+  width: 100%;
+
+  background-color: rgba(1, 0, 58, 0.1);
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 32px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  /* wordWrap: 'break-word' */
+}
+
+.forget-pass-con form h1 {
+  color: #1a2129;
+  font-size: 33px;
+  font-family: "General Sans";
+  font-weight: 600;
+  /* wordWrap: 'break-word' */
+}
+.forget-pass-con form div:first-child p {
+  color: #5e6b74;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: "400";
+  line-height: 28px;
+  /* wordWrap: 'break-word' */
+}
+
+.forget-pass-con form .reset-password {
+  background-color: rgba(255, 165, 0, 0.6);
+  color: white;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 600;
+  border: none;
+  padding: 2vh 2vw;
+  border-radius: 10px;
+}
+
+.forget-pass-con .headset-p {
+  display: flex;
+  align-items: center;
+  gap: 0 1vw;
+
+  position: absolute;
+  right: 6vw;
+  bottom: 6vh;
+  color: #3331a3;
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 32px;
+  /* wordWrap: 'break-word' */
+}
+
+.forget-pass-con .modal-con {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forget-pass-con .modal-con .modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 0 7vw;
+  padding: 18vh 12vw;
+}
+
+.forget-pass-con .modal-con .modal div {
+  width: 8vw;
+}
+.forget-pass-con .modal-con .modal div img {
+  width: 100%;
+}
+.forget-pass-con .modal-con .modal h1 {
+  color: #1a2129;
+  font-size: 33px;
+  font-family: "General Sans";
+  font-weight: 600;
+  /* wordWrap: 'break-word' */
+}
+
+.forget-pass-con .modal-con .modal h1 {
+  color: #1a2129;
+  font-size: 33px;
+  font-family: "General Sans";
+  font-weight: 600;
+  /* wordWrap: 'break-word' */
+}
+.forget-pass-con .modal-con .modal .message-sent {
+  color: #5e6b74;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 28px;
+  /* wordWrap: 'break-word' */
+}
+.forget-pass-con .modal-con .modal .user-email {
+  font-weight: 500;
+}
+
+.forget-pass-con .modal-con .modal .wrong-e-address {
+  color: rgba(1, 0, 58, 0.41);
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 32px;
+  /* wordWrap: 'break-word' */
+}
+
+.forget-pass-con .modal-con .modal .re-enter-e-address {
+  color: #ffa500;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-decoration: underline;
+  line-height: 32px;
+  /* wordWrap: 'break-word' */
+}
+
