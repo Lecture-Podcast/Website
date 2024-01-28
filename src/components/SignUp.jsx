@@ -1,35 +1,57 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-
-import { FcGoogle } from "react-icons/fc";
-
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 
+import { FcGoogle } from "react-icons/fc";
 import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 
-// import Rectangle from "../img/Rectangle 12.png";
+import Misc from "../img/Misc icon.png";
 import LP from "../img/LP Logo.png";
 import headset from "../img/headset.png";
 
-function SignUp() {
-  const [password, setPassword] = useState("");
+import "./css/signUp.css";
 
+function SignUp() {
   const [visible, setVisible] = useState(true);
 
   const [confirmPassVisible, setConfirmPassVisible] = useState(true);
 
+  const [errMessage, setErrMessage] = useState(true);
+
+  function removeErrMessage() {
+    setErrMessage(false);
+  }
+
   return (
-    <div className="container">
+    <div className="sign-up">
       <div className="left-side">
         <div className="logo">
-        <img src={LP} alt="" />
+          <img src={LP} alt="" />
         </div>
         <p>Empower Content Creation with a User Friendly Platform</p>
       </div>
       <div className="right-side">
+        {errMessage && (
+          <div className="error-message">
+            <div>
+              <div className="error-img">
+                <img src={Misc} alt="" />
+              </div>
+              <p>
+                Passwords do not match. Please ensure both entries are
+                identical.
+              </p>
+              <IoMdClose
+                className="cancel"
+                onClick={() => removeErrMessage()}
+              />
+            </div>
+          </div>
+        )}
         <form>
           <div>
             <h1>
@@ -51,6 +73,7 @@ function SignUp() {
           <div className="phone-num">
             <label htmlFor="number">
               <PhoneInput
+                className="number"
                 id="number"
                 country={"ng"}
                 // 			value={***}
@@ -100,11 +123,9 @@ function SignUp() {
           <div className="password">
             <label htmlFor="password"></label>
             <input
-              //   value={password}
               id="password"
               type={visible ? "text" : "password"}
               placeholder="Password"
-              //   onChange={(e) => setPassword(e.target.value)}
             />
             <div
               className="input-absolute"
@@ -120,11 +141,9 @@ function SignUp() {
           <div className="password">
             <label htmlFor="confirm-password"></label>
             <input
-              //   value={password}
               id="confirm-password"
               type={confirmPassVisible ? "text" : "password"}
               placeholder="Confirm Password"
-              //   onChange={(e) => setPassword(e.target.value)}
             />
             <div
               className="input-absolute"
