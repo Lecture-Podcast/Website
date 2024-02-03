@@ -82,7 +82,6 @@
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2rem; /* 177.778% */
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -250,7 +249,6 @@
   font-size: 20.04px;
   font-family: "Poppins";
   font-weight: 500;
-  line-height: 35.62px;
   margin-bottom: 10px;
   /* wordWrap: 'break-word' */
 }
@@ -291,7 +289,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 24px;
+  gap: 47px;
 }
 .elevate{
   margin-top: 203px;
@@ -305,7 +303,6 @@
   font-size: 2.375rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 2.8125rem; /* 118.421% */
 }
 .amplify-text{
   margin-top: 30px;
@@ -315,14 +312,18 @@
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2rem; /* 177.778% */
 }
 .amplify-image{
   width: 50%;
   display: flex;
   justify-content: right;
 }
-
+.image-1{
+  margin-right: -80px;
+}
+.image-2{
+  margin-left: -60px;
+}
 .home-main .amplify h3 span,
 .elevate h3 span,
 .empower h3 span {
@@ -480,12 +481,13 @@
   gap: 20px;
   height: 349px;
   margin-top: 120px;
+  overflow: hidden;
 }
 
 
 
 .home-main .testimonial-session .card {
-  width: 507px;
+  min-width: 507px;
   background-color: white;
   padding: 2rem;
   border-radius: 5px;
@@ -894,4 +896,92 @@
   padding-top: 4vh;
   /* wordWrap: 'break-word' */
   border-top: 1px solid #000025;
+}
+@media (max-width:1200px) {
+  .intro-header{
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+  }
+  .into-text{
+    font-size: 0.9rem;
+  }
+  .choose-grid {
+    padding: 2rem 1rem;
+  }
+  .home-main .p-icons h3 {
+    font-size: 1rem;
+  }
+  .home-main .p-icons div p {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  .choose-grid div{
+    width: 60px;
+    height: 60px;
+  }
+  /* .choose-grid div svg{
+    width: 60%;
+  } */
+}
+@media (max-width:1100px) {
+  .intro-header{
+    font-size: 3rem;
+  }
+  .intro-image-con{
+    width: 50%;
+  }
+  .intro-text{
+    font-size: 0.9rem;
+  }
+  .p-icons{
+    width: 55%;
+  }
+  .home-main .p-img img {
+    width: 90%;
+    height: 200px;
+  }
+  .choose-grid div{
+    width:50px;
+    height: 50px;
+  }
+  .choose-grid div svg{
+    width: 60%;
+  }
+  .amplify-header{
+    font-size: 1.9rem;
+  }
+  .amplify-text{
+    font-size: 0.9rem;
+  }
+  .amplify-image{
+    width: 60%;
+  }
+  .home-main .getting {
+    padding: 7rem 6rem;
+  }
+  .home-main .getting .text-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 90px;
+  }
+  .getting-header{
+    font-size: 2rem;
+  }
+  .getting-body{
+    font-size: 0.9rem;
+  }
+  .home-main .getting .text-con .text div:nth-child(2) p {
+    font-size: 0.9rem;
+  }
+  .home-main .getting .text-con .vid-con {
+    width: 50%;
+  }
+  .home-main .getting .text-con .vid-con img {
+    width: 100%;
+  }
+  .home-main .testimonial-session .card {
+    /* width: 900px; */
+  }
 }

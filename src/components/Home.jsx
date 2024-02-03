@@ -68,7 +68,7 @@ function Home() {
               <h1 className="intro-header">Learn <span className="anytime">Anytime</span>, <span className="anywhere">Anywhere</span> with Lecture Podcast</h1>
               <p className="intro-text">
                 Embark on a journey of discovery, with engaging content,
-                interactive<br></br> learning, and endless possibilities with audio and
+                interactive learning, and endless possibilities with audio and
                 video learning.
               </p>
             </div>
@@ -184,13 +184,13 @@ function Home() {
               </p>
               <button className="amplify-button">Get Started</button>
             </div>
-            <div className="amplify-image">
+            <div className="amplify-image image-1">
               <img src={creator} alt="" />
             </div>
           </div>
 
           <div className="elevate">
-            <div className="amplify-image">
+            <div className="amplify-image image-2">
               <img src={Learning} alt="" />
             </div>
             <div className="amplify-body">
