@@ -22,19 +22,25 @@ import Phone from "../img/Phone.png";
 import twitter from "../img/twitter.png";
 import instagram from "../img/instagram.png";
 import tabler from "../img/tabler_mail.png";
-import { FaPhone } from "react-icons/fa6";
+import { FaBars, FaPhone } from "react-icons/fa6";
 import { MdMail } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { FaTimes } from "react-icons/fa";
 import { SlSocialTwitter } from "react-icons/sl";
 import { SlSocialInstagram } from "react-icons/sl";
 
 import "./css/home.css";
+import { useState } from "react";
 
 function Home() {
+  const [show, setshow] = useState(false)
 
+  const handleShow = ()=>{
+    setshow(!show)
+  }
   const personStars = Array.from({ length: 4 }, (v, i) => i);
 
   const stars = personStars.map((s, i) => {
@@ -44,21 +50,41 @@ function Home() {
   return (
     <div className="home-con">
       <div className="nav-con">
-        <nav>
           <div>
             <img src={logo} alt="logo" />
           </div>
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Tutorial</li>
-            <li>Testimonials</li>
-            <li>Contact Us</li>
-          </ul>
-          <div>
-            <button>Get Started</button>
+          <nav className="nav-desktop"> 
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Tutorial</li>
+              <li>Testimonials</li>
+              <li>Contact Us</li>
+            </ul>
+            <div >
+              <button className="nav-button">Get Started</button>
+            </div>
+          </nav>
+          <div className="nav-hambuger" onClick={handleShow}>
+            <FaBars/>
           </div>
-        </nav>
+          {show && (
+            <nav className="nav-mobile"> 
+              <div className="nav-times" onClick={handleShow}>
+                <FaTimes/>
+              </div>
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Tutorial</li>
+                <li>Testimonials</li>
+                <li>Contact Us</li>
+              </ul>
+              <div >
+                <button className="nav-button nav-button-mobile">Get Started</button>
+              </div>
+            </nav>
+          )}
       </div>
 
       <main className="home-main">

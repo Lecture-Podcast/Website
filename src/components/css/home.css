@@ -4,25 +4,32 @@
 .nav-con {
   position: fixed;
   width: 100%;
-}
-
-.home-con nav {
+  z-index: 4;
   display: flex;
   background: #01003a;
   align-items: center;
-  justify-content: space-around;
-  padding: 1.5rem ;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+
+.home-con .nav-desktop{
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap:60px;
 }
-
-.home-con nav img {
+.nav-mobile{
+  display: none !important;
+  transition: 1s;
+  transform: translateY(-100vh);
+}
+.home-con .nav-desktop img {
   width: 100%;
   cursor: pointer;
 }
-
-.home-con nav ul {
+.home-con .nav-desktop ul {
   color: #f9f9f9;
   list-style: none;
   display: flex;
@@ -30,11 +37,11 @@
   gap: 0 3vw;
 }
 
-.home-con nav ul li {
+.home-con .nav-desktop ul li {
   cursor: pointer;
 }
 
-.home-con nav div:nth-child(3) button {
+.nav-button {
   background-color: #ffa500;
   padding: 0.81rem 3.94rem;
   border-radius: 8px;
@@ -47,6 +54,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.nav-hambuger{
+  display: none;
 }
 /* Home main */
 .home-main {
@@ -65,7 +75,7 @@
   width: 100%;
   color: #1A2129;
   font-family: "Montserrat";
-  font-size: 4.25rem;
+  font-size: 3.25rem;
   font-style: normal;
   font-weight: 800;
   line-height: 4.625rem; /* 108.824% */
@@ -983,5 +993,53 @@
   }
   .home-main .testimonial-session .card {
     /* width: 900px; */
+  }
+}
+
+@media (max-width: 900px){
+  .nav-hambuger{
+    display: block;
+  } 
+  .nav-times{
+    display: flex;
+    justify-content: right;
+  }
+  .nav-hambuger svg, .nav-times svg{
+    color: white;
+    font-size: 1.5rem;
+  }
+  .home-con nav {
+    display: none;
+  }
+  .nav-desktop{
+    display: none !important;
+  }
+  .nav-mobile{
+    display: block !important;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: 1s;
+    padding: 2rem;
+    transform: translateY(0vh);
+    background-color: #01003A;
+  }
+  .nav-mobile ul{
+    list-style: none;
+    padding: 2rem;
+  }
+
+  .nav-mobile ul li{
+    color: #f9f9f9;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  .nav-button-mobile{
+    margin-left: 2rem;
   }
 }
