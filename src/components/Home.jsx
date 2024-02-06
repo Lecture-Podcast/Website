@@ -122,7 +122,7 @@ function Home() {
             <p>Completion rate</p>
           </div>
           <div>
-            <p>15Years</p>
+            <p>15 Years</p>
             <p>Average Mentor Experience</p>
           </div>
         </div>
@@ -140,7 +140,7 @@ function Home() {
                   in shaping the future of education
                 </p>
               </div>
-              <div>
+              <div className="why-img-con">
                 <img src={Rectangle} alt="" />
               </div>
             </div>
@@ -208,7 +208,10 @@ function Home() {
                 your expertise with a global audience. Gain exposure, build your
                 brand, and inspire learners worldwide.
               </p>
+              <div className="button-container">
               <button className="amplify-button">Get Started</button>
+              </div>
+              
             </div>
             <div className="amplify-image image-1">
               <img src={creator} alt="" />
@@ -228,7 +231,9 @@ function Home() {
                 range of courses, engage with experienced mentors, and tailor
                 your education to match your unique interests and career goals.
               </p>
-              <button>Start Learning Today</button>
+              <div className="button-container">
+                <button>Start Learning Today</button>
+              </div>  
             </div>
           </div>
 
@@ -242,7 +247,10 @@ function Home() {
                 your educational content, connect with a broader audience, and
                 make a lasting impact on the global learning community.
               </p>
-              <button >Get Started</button>
+              <div className="button-container">
+                <button>Get Started</button>
+              </div>
+              
             </div>
             <div className="amplify-image">
               <img src={Teaching} alt="" />
@@ -542,12 +550,8 @@ function Home() {
                 and the best offers{" "}
               </p>
               <div className="input-img">
-                <div className="message">
-                  <img src={tabler} alt="" />
-                </div>
                 <input type="text" placeholder="Enter your email address" />
               </div>
-
               <button>Subscribe</button>
             </div>
           </div>
