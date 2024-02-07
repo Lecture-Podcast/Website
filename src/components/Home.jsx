@@ -411,9 +411,9 @@ function Home() {
             </div>
           </div>
 
-          <div className="below-slides">
+          {/* <div className="below-slides">
             <img src={slideImg} alt="" />
-          </div>
+          </div> */}
         </div>
 
         <div className="get-in-touch">
