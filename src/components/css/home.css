@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
 .home-con {
   width: 100%;
 }
@@ -39,6 +42,12 @@
 
 .home-con .nav-desktop ul li {
   cursor: pointer;
+  padding-bottom: 5px;
+  
+}
+.active{
+  opacity: 0.8;
+  border-bottom: 2px solid #FFA500;
 }
 
 .nav-button {

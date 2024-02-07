@@ -33,10 +33,23 @@ import { SlSocialTwitter } from "react-icons/sl";
 import { SlSocialInstagram } from "react-icons/sl";
 
 import "./css/home.css";
-import { useState } from "react";
+import { useState , useRef} from "react";
 
 function Home() {
   const [show, setshow] = useState(false)
+  const [active, setactive] = useState(1)
+  const about = useRef(null)
+  const testimonial = useRef(null)
+  const tutorial = useRef(null)
+  const contact = useRef(null)
+  const home = useRef(null)
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
 
   const handleShow = ()=>{
     setshow(!show)
@@ -55,11 +68,11 @@ function Home() {
           </div>
           <nav className="nav-desktop"> 
             <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Tutorial</li>
-              <li>Testimonials</li>
-              <li>Contact Us</li>
+              <li onClick={()=>{scrollToSection(home); setactive(1)}} className={active===1 && "active"}>Home</li>
+              <li onClick={()=>{setactive(2); scrollToSection(about)}} className={active===2 && "active"}>About Us</li>
+              <li onClick={()=>{scrollToSection(tutorial); setactive(5)}} className={active===5 && "active"}>Tutorial</li>
+              <li onClick={()=>{scrollToSection(testimonial); setactive(3)}} className={active===3 && "active"}>Testimonials</li>
+              <li onClick={()=>{scrollToSection(contact); setactive(4)}} className={active===4 && "active"}>Contact Us</li>
             </ul>
             <div >
               <button className="nav-button">Get Started</button>
@@ -74,11 +87,11 @@ function Home() {
                 <FaTimes/>
               </div>
               <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Tutorial</li>
-                <li>Testimonials</li>
-                <li>Contact Us</li>
+                <li onClick={()=>{handleShow(); scrollToSection(home)}}>Home</li>
+                <li onClick={()=>{handleShow(); scrollToSection(about)}}>About Us</li>
+                <li onClick={()=>{scrollToSection(tutorial); handleShow();}}>Tutorial</li>
+                <li onClick={()=>{handleShow(); scrollToSection(testimonial)}}>Testimonials</li>
+                <li onClick={()=>{handleShow(); scrollToSection(contact)}}>Contact Us</li>
               </ul>
               <div >
                 <button className="nav-button nav-button-mobile">Get Started</button>
@@ -88,7 +101,7 @@ function Home() {
       </div>
 
       <main className="home-main">
-        <div className="learn-p-btn-pic">
+        <div ref={home} className="learn-p-btn-pic">
           <div className="learn-p-btn">
             <div>
               <h1 className="intro-header">Learn <span className="anytime">Anytime</span>, <span className="anywhere">Anywhere</span> with Lecture Podcast</h1>
@@ -127,7 +140,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="why-amplify-elevate-empower">
+        <div ref={about} className="why-amplify-elevate-empower">
           <div className="why-choose-us">
             <div className="p-img">
               <div>
@@ -257,7 +270,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="getting">
+          <div ref={tutorial} className="getting">
             <div className="text-con">
               <div className="text">
                 <div className="h4-p">
@@ -317,7 +330,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="testimonial-session">
+        <div ref={testimonial} className="testimonial-session">
           <div className="h5-p">
             <h5>What our clients are saying</h5>
             <p>
@@ -416,7 +429,7 @@ function Home() {
           </div> */}
         </div>
 
-        <div className="get-in-touch">
+        <div ref={contact} className="get-in-touch">
           <div className="layer">
             <div className="get-in-touch-social">
               <div className="e-message">
