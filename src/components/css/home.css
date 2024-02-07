@@ -1078,7 +1078,7 @@
     align-items: center;
   }
   .home-main .why-amplify-elevate-empower {
-    padding-top: 4rem !important;
+    padding-top: 3.8125rem !important;
   }
   .why-choose-us {
     display: flex;
@@ -1116,7 +1116,7 @@
   }
   .amplify, .elevate, .empower{
     margin-top: 100px;
-    padding: 0rem 6em;
+    padding: 0rem 6rem;
   }
   .amplify, .empower{
     flex-direction: column-reverse;   
@@ -1289,4 +1289,55 @@
     width: 90%;
     height: auto;
   }
+  .p-icons {
+    grid-gap: 17px;
+  }
+  .choose-grid {
+    padding: 1.125rem 0.625rem;
+  }
+  .home-main .p-icons h3 {
+    color: #1a2129;
+    font-size: 0.6875rem;
+    font-family: "Poppins";
+    font-weight: 500;
+    margin-bottom: 10px;
+    /* wordWrap: 'break-word' */
+  }
+  .home-main .p-icons div p {
+    color: #5E6B74;
+    font-size: 0.625rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    line-height: 17.11px;
+  }
+  .choose-grid div{
+    width: 34px;
+    height: 34px;
+  }
+  .image-1{
+    margin-right: -30px;
+  }
+  .amplify, .elevate, .empower{
+    margin-top: 100px;
+    padding: 0rem 2rem;
+  }
+  .home-main .amplify div:nth-child(2) img,
+  .elevate div:first-child img,
+  .empower div:nth-child(2) img {
+    width: 98%;
+  }
+  .amplify-header{
+    text-align: center;
+    font-size: 1.1875rem;
+  }
+  .amplify-text{
+    text-align: center;
+    font-size: 0.625rem;
+  }
+  .home-main .amplify button,
+.elevate button,
+.empower button {
+  padding: 1.19rem 4.19rem;
+  font-size: 0.6375rem;
+}
 }
