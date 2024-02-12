@@ -1,6 +1,6 @@
 // import { testimonial } from "../data/data";
 
-import logo from "../img/LP Logo.png";
+import logo from "../img/lplogo.png";
 import Rectangle from "../img/Rectangle 18.png";
 import Experienced from "../img/Experienced Educators.png";
 import Flexible from "../img/Flexible learning.png";

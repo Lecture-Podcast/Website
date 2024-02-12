@@ -10,7 +10,7 @@ import { FaRegEye } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
 import Misc from "../img/Misc icon.png";
-import LP from "../img/LP Logo.png";
+import LP from "../img/lplogo.png";
 import headset from "../img/headset.png";
 
 import "./css/signUp.css";

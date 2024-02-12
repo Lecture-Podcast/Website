@@ -3,7 +3,7 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
 import Misc from "../img/Misc icon.png";
-import LP from "../img/LP Logo.png";
+import LP from "../img/lplogo.png";
 import headset from "../img/headset.png";
 import chevron from "../img/chevron-right.png";
 import success from "../img/undraw_completing_re_i7ap 1.png";

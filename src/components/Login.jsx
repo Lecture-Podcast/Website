@@ -7,7 +7,7 @@ import { FaEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
-import LP from "../img/LP Logo.png";
+import LP from "../img/lplogo.png";
 import headset from "../img/headset.png";
 import Misc from "../img/Misc icon.png";
 

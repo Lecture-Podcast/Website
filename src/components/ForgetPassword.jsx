@@ -4,7 +4,7 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
 import Misc from "../img/Misc icon.png";
-import LP from "../img/LP Logo.png";
+import LP from "../img/lplogo.png";
 import headset from "../img/headset.png";
 import chevron from "../img/chevron-right.png";
 import Mail from "../img/freepik--Mail--inject-20.png";
