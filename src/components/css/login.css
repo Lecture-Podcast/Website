@@ -1,6 +1,8 @@
+
+
 .login-con {
   display: flex;
-  width: 100%;
+  width: 95%;
 }
 
 .login-con button {
@@ -66,7 +68,8 @@
 
 .login-con .form-con {
   /* width: 40%; */
-  height: 100vh;
+  background-color: white;
+  height: 95vh;
 }
 
 .login-con .form-con h1 {

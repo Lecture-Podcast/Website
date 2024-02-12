@@ -34,10 +34,12 @@ import { SlSocialInstagram } from "react-icons/sl";
 
 import "./css/home.css";
 import { useState , useRef} from "react";
+import Modal from "./Modal";
 
 function Home() {
   const [show, setshow] = useState(false)
   const [active, setactive] = useState(1)
+  const [modal, setmodal] = useState(false)
   const about = useRef(null)
   const testimonial = useRef(null)
   const tutorial = useRef(null)
@@ -50,6 +52,9 @@ function Home() {
       behavior: "smooth",
     });
   };
+  const handlemodal = () =>{
+    setmodal(!modal)
+  }
 
   const handleShow = ()=>{
     setshow(!show)
@@ -62,6 +67,7 @@ function Home() {
 
   return (
     <div className="home-con">
+      {modal && (<Modal handlemodal={handlemodal}/>)}
       <div className="nav-con">
           <div>
             <img src={logo} alt="logo" />
@@ -75,7 +81,7 @@ function Home() {
               <li onClick={()=>{scrollToSection(contact); setactive(4)}} className={active===4 && "active"}>Contact Us</li>
             </ul>
             <div >
-              <button className="nav-button">Get Started</button>
+              <button className="nav-button" onClick={handlemodal}>Join Waitlist</button>
             </div>
           </nav>
           <div className="nav-hambuger" onClick={handleShow}>
@@ -94,7 +100,7 @@ function Home() {
                 <li onClick={()=>{handleShow(); scrollToSection(contact)}}>Contact Us</li>
               </ul>
               <div >
-                <button className="nav-button nav-button-mobile">Get Started</button>
+                <button className="nav-button nav-button-mobile" onClick={handlemodal}>Join Waitlist</button>
               </div>
             </nav>
           )}
@@ -112,7 +118,7 @@ function Home() {
               </p>
             </div>
             <div className="button-container">
-              <button className="get-started-btn">Get Started</button>
+              <button className="get-started-btn" onClick={handlemodal}>Join Waitlist</button>
               <button className="learn-more-btn">Learn More</button>
             </div>
           </div>
