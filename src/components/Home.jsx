@@ -228,7 +228,7 @@ function Home() {
                 brand, and inspire learners worldwide.
               </p>
               <div className="button-container">
-              <button className="amplify-button">Get Started</button>
+              <button className="amplify-button" onClick={handlemodal}>Join Waitlist</button>
               </div>
               
             </div>
@@ -251,7 +251,7 @@ function Home() {
                 your education to match your unique interests and career goals.
               </p>
               <div className="button-container">
-                <button>Start Learning Today</button>
+                <button onClick={handlemodal}>Start Learning Today</button>
               </div>  
             </div>
           </div>
@@ -267,7 +267,7 @@ function Home() {
                 make a lasting impact on the global learning community.
               </p>
               <div className="button-container">
-                <button>Get Started</button>
+                <button onClick={handlemodal}>Get Started</button>
               </div>
               
             </div>

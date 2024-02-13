@@ -131,7 +131,7 @@ function Modal({handlemodal}) {
                         </label>
                     </div>
                     <label htmlFor="areaOfExpertise">
-                        <select id="areaOfExpertise" onChange={handledes}>
+                        <select id="areaOfExpertise" onChange={handledes} className="select-wait">
                             <option>Area of expertise</option>
                             <option value="lecturer">Lecturer</option>
                             <option value="student">Student</option>
