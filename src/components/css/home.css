@@ -548,8 +548,8 @@
   border-radius: 50%;
 }
 .home-main .testimonial-session .person-details .person-img img{
-  width: 40px;
-  height: 40px !important;
+  width: 100%;
+  height: 100% !important;
   border-radius: 50%;
 }
 .home-main .testimonial-session .person-details p:first-child {
@@ -567,10 +567,6 @@
   font-weight: 400;
   /* line-height: 28px; */
   /* wordWrap: 'break-word' */
-}
-
-.home-main .testimonial-session .person-details .person-img img {
-  width: 100%;
 }
 
 .home-main .testimonial-session .person-details .name-uni {
@@ -1400,7 +1396,7 @@
   .home-main .testimonial-session .card-con {
     display: flex;
     gap: 15px;
-    height: 160.29px;
+    height: 190.29px;
     margin-top: 20px;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -1424,8 +1420,11 @@
     margin-top: 30px;
   }
   .home-main .testimonial-session .person-details .person-img {
-    width:15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
   }
+
   .home-main .testimonial-session .person-details p:first-child {
     color: "#1A2129";
     font-size: 7px;

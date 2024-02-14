@@ -255,7 +255,7 @@ function Home() {
                 your education to match your unique interests and career goals.
               </p>
               <div className="button-container">
-                <button onClick={handlemodal}>Start Learning Today</button>
+                <button onClick={handlemodal}>Join Waitlist</button>
               </div>  
             </div>
           </div>
@@ -271,7 +271,7 @@ function Home() {
                 make a lasting impact on the global learning community.
               </p>
               <div className="button-container">
-                <button onClick={handlemodal}>Get Started</button>
+                <button onClick={handlemodal}>Join Waitlist</button>
               </div>
               
             </div>
