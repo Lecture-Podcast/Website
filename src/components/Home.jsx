@@ -16,6 +16,10 @@ import vid from "../img/Video.png";
 import quote from "../img/bxs_quote-left.png";
 import star from "../img/ic_round-star.png";
 import Ellipse from "../img/Ellipse 1 (1).png";
+import person1 from "../assets/batel.jpg";
+import person2 from "../assets/prince.jpg"
+import person3 from "../assets/ransford.jpg"
+import person4 from "../assets/jurica.jpg"
 import slideImg from "../img/Frame 20.png";
 import mail from "../img/mail.png";
 import Phone from "../img/Phone.png";
@@ -358,7 +362,7 @@ function Home() {
               </p>
               <div className="person-details">
                 <div className="person-img">
-                  <img src={Ellipse} alt="" />
+                  <img src={person1} alt="" />
                 </div>
                 <div className="name-uni">
                   <p>Ikechukwu Amadi</p>
@@ -377,7 +381,7 @@ function Home() {
               </p>
               <div className="person-details">
                 <div className="person-img">
-                  <img src={Ellipse} alt="" />
+                  <img src={person2} alt="" />
                 </div>
                 <div className="name-uni">
                   <p>Prof. Kadiri Simon</p>
@@ -398,7 +402,7 @@ function Home() {
               </p>
               <div className="person-details">
                 <div className="person-img">
-                  <img src={Ellipse} alt="" />
+                  <img src={person3} alt="" />
                 </div>
                 <div className="name-uni">
                   <p>Emmanuel Daniels</p>
@@ -419,7 +423,7 @@ function Home() {
               </p>
               <div className="person-details">
                 <div className="person-img">
-                  <img src={Ellipse} alt="" />
+                  <img src={person4} alt="" />
                 </div>
                 <div className="name-uni">
                   <p>Precious</p>
