@@ -384,7 +384,7 @@ function Home() {
                   <img src={person2} alt="" />
                 </div>
                 <div className="name-uni">
-                  <p>Prof. Kadiri Simon</p>
+                  <p>Prof. Frances Chinanza</p>
                   <p>University of Abuja.</p>
                 </div>
                 <div className="person-star">{stars}</div>

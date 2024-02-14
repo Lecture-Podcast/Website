@@ -20,7 +20,7 @@ import LottieAnimation from "../lotties";
 
 function Modal({handlemodal}) {
     const [formData, setFormData] = useState({});
-    const { response, error, loading, success } = usePost('https://lecture-backend.onrender.com/api/lecture/waitlist', formData);
+    const { response, error, loading, success, message } = usePost('https://lecture-backend.onrender.com/api/lecture/waitlist', formData);
     const [visible, setVisible] = useState(true);
 
     const [confirmPassVisible, setConfirmPassVisible] = useState(true);
@@ -72,91 +72,90 @@ function Modal({handlemodal}) {
             <div className="right-side">
                 {!success && (
                     <form onSubmit={handleSubmit}>
-                    <div className="modal-close">
-                        <div className="div" onClick={handlemodal}>
-                            <FaTimes/>
-                        </div> 
-                    </div>
-                    <div>
-                        <h1 className="join-head">
-                            Join the Waitlist
-                        </h1>
-                        <p className="join-body">Enter your details below to join the waitlist</p>
-                    </div>
-                    {error!==null && (
-                        <div className="error">
-                            <p>{error}</p>
+                        <div className="modal-close">
+                            <div className="div" onClick={handlemodal}>
+                                <FaTimes/>
+                            </div> 
                         </div>
-                    )}
-                    <label htmlFor="name">
-                        <input 
-                            type="text" 
-                            id="name" 
-                            placeholder="Name" 
-                            required 
-                            onChange={handlename}
-                            onBlur={handlename}
-                        />
-                    </label>
-                    <label htmlFor="email">
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="Email"
-                            required
-                            onChange={handlemail}
-                            onBlur={handlemail}
-                        />
-                    </label>
-                    <div className="phone-num">
-                        <label htmlFor="number">
-                        <input
-                            className="number"
-                            id="number"
-                            required
-                            maxLength={11}
-                            onChange={handlephone}
-                            onBlur={handlephone}
-                            placeholder="Phone Number"
-                            // 			value={***}
-                            //   onChange={****}
-                            // inputProps={{
-                            //   required: true
-                            // }}
-                        />
-                        {/* <div>
-                            <img src={nigNumber} alt="country-flag-number" />
+                        <div>
+                            <h1 className="join-head">
+                                Join the Waitlist
+                            </h1>
+                            <p className="join-body">Enter your details below to join the waitlist</p>
                         </div>
-                        <input type="number" id="number" /> */}
-                        </label>
-                    </div>
-                    <label htmlFor="areaOfExpertise">
-                        <select id="areaOfExpertise" onChange={handledes} className="select-wait">
-                            <option>Area of expertise</option>
-                            <option value="lecturer">Lecturer</option>
-                            <option value="student">Student</option>
-                            <option value="contentCreators">Content Creators</option>
-                        </select>
-                    </label>
-                    
-                    {loading ? (
-                        <button  className="modal-submit">
-                            <div className="loading-2">
-                                <LottieAnimation data={loading2} />
+                        {error!==null && (
+                            <div className="error">
+                                <p>{error}</p>
                             </div>
-                        </button>
-                    ) : (
-                        <button type="submit" className="modal-submit">Join The Waitlist</button>
-                    )}
-                   
-                </form>
+                        )}
+                        <label htmlFor="name">
+                            <input 
+                                type="text" 
+                                id="name" 
+                                placeholder="Name" 
+                                required 
+                                onChange={handlename}
+                                onBlur={handlename}
+                            />
+                        </label>
+                        <label htmlFor="email">
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Email"
+                                required
+                                onChange={handlemail}
+                                onBlur={handlemail}
+                            />
+                        </label>
+                        <div className="phone-num">
+                            <label htmlFor="number">
+                            <input
+                                className="number"
+                                id="number"
+                                required
+                                maxLength={11}
+                                onChange={handlephone}
+                                onBlur={handlephone}
+                                placeholder="Phone Number"
+                                // 			value={***}
+                                //   onChange={****}
+                                // inputProps={{
+                                //   required: true
+                                // }}
+                            />
+                            {/* <div>
+                                <img src={nigNumber} alt="country-flag-number" />
+                            </div>
+                            <input type="number" id="number" /> */}
+                            </label>
+                        </div>
+                        <label htmlFor="areaOfExpertise">
+                            <select required id="areaOfExpertise" onChange={handledes} className="select-wait">
+                                <option>Area of expertise</option>
+                                <option value="lecturer">Lecturer</option>
+                                <option value="student">Student</option>
+                            </select>
+                        </label>
+                        
+                        {loading ? (
+                            <button  className="modal-submit">
+                                <div className="loading-2">
+                                    <LottieAnimation data={loading2} />
+                                </div>
+                            </button>
+                        ) : (
+                            <button type="submit" className="modal-submit">Join The Waitlist</button>
+                        )}
+                    
+                    </form>
                 )}
                 {success && (
                     <div className="success-con">
                         <div className="image-con">
                             <img src={success2}></img>
                         </div>
-                        <p className="join-body">You Have Successfully Joined the Waitlist</p>
+                        <p className="join-body">{message}</p>
                         <button className="done-button" onClick={handlemodal}>Done</button>
                     </div>
                 )}
