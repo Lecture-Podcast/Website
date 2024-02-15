@@ -131,22 +131,22 @@ function Modal({handlemodal}) {
                             <input type="number" id="number" /> */}
                             </label>
                         </div>
-                        <label htmlFor="areaOfExpertise">
-                            <select required id="areaOfExpertise" onChange={handledes} className="select-wait">
-                                <option>Area of expertise</option>
-                                <option value="lecturer">Lecturer</option>
-                                <option value="student">Student</option>
-                            </select>
-                        </label>
+                        <label for="areaOfExpertise"></label>
+                        <select id="areaOfExpertise" onChange={handledes} className="select-wait" required>
+                            <option>Area of expertise</option>
+                            <option value="lecturer">Lecturer</option>
+                            <option value="student">Student</option>
+                        </select>
+                        
                         
                         {loading ? (
-                            <button  className="modal-submit">
+                            <button  className="modal-submit" disabled>
                                 <div className="loading-2">
                                     <LottieAnimation data={loading2} />
                                 </div>
                             </button>
                         ) : (
-                            <button type="submit" className="modal-submit">Join The Waitlist</button>
+                            <button className="modal-submit">Join The Waitlist</button>
                         )}
                     
                     </form>
