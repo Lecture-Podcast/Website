@@ -11,6 +11,7 @@ import { IoMdClose } from "react-icons/io";
 
 import Misc from "../img/Misc icon.png";
 import LP from "../img/lplogo.png";
+import success3 from '../assets/SUCCESS.json'
 import headset from "../img/headset.png";
 import success2 from '../assets/Success.png'
 import loading2 from '../assets/loading.json'
@@ -153,7 +154,7 @@ function Modal({handlemodal}) {
                 {success && (
                     <div className="success-con">
                         <div className="image-con">
-                            <img src={success2}></img>
+                            <LottieAnimation data={success3} />
                         </div>
                         <p className="join-body">{message}</p>
                         <button className="done-button" onClick={handlemodal}>Done</button>

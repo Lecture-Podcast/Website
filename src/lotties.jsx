@@ -12,7 +12,7 @@ function LottieAnimation({ lotti , data}) {
   };
 
   return (
-    <div className="spinner" style={{width: "20%"}}>
+    <div className="spinner">
       <Lottie options={defaultOptions} animationData={data}/>
     </div>
   );

@@ -21,9 +21,9 @@ function usePost(url, data) {
         if(res.status === 200){
             setsuccess(true)
             if(res?.data?.Designation === "student"){
-              setMessage("CONGRATULATIONS 🎊 Get ready for a revolution! Lecture Podcast (LP) brings top educators to your fingertips. Thrilling, impactful learning awaits  stay tuned")
+              setMessage("CONGRATULATIONS 🎊 Get ready for a revolution! Lecture Podcast (LP)🎤 brings top educators to your fingertips📈. Thrilling, impactful learning awaits  stay tuned😊")
             }else{
-              setMessage("Welcome, educators! Elevate teaching with Lecture Podcast (LP). Engage, innovate, and inspire together as a community to make a lasting impact!")
+              setMessage("Welcome, educators! Elevate📈 teaching with Lecture Podcast (LP)🎤. Engage, innovate, and inspire ♾️together as a community to make a lasting impact!😊")
             }
         }
         setResponse(res.data);

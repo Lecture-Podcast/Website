@@ -55,10 +55,11 @@
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
+  overflow-y: scroll;
   border-radius: 5px;
   width: 38%;
   margin: 0 4vw;
-  padding: 4vh;
+  padding: 1rem;
 }
 .success-con{
   display: flex;
@@ -71,6 +72,7 @@
   width: 100%;
   display: flex;
   justify-content: right;
+
 }
 .div{
   width: 40px;
@@ -197,6 +199,9 @@
 .modal-submit{
   margin-top: 0px;
 }
+.loading-2{
+  width: 20%;
+}
 .sign-up form button {
   border-radius: 10px;
   width: 100%;
@@ -316,6 +321,9 @@
     font-size: 15px;
     font-family: "Poppins";
     font-weight: 400;
+  }
+  .modal-close{
+      margin-top: 30px;
   }
   .sign-up input, .select-wait {
     outline: none;
